@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "USD to ETH",
+	"description": "Converts USD prices to Ethereum.",
+	"version": "0.0.1",
+	"icons": {
+		"16": "icons/icon_16.png",
+		"48": "icons/icon_48.png",
+		"128": "icons/icon_128.png"
+	},
+  "permissions": ["activeTab"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["index.js"]
+		}
+	]
+}
